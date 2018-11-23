@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <delete dir="/home/ployo/workspace/ReadCodes/hadoop-2.9.1-src/hadoop-common-project/hadoop-common/target/test/data"/>
+  <mkdir dir="/home/ployo/workspace/ReadCodes/hadoop-2.9.1-src/hadoop-common-project/hadoop-common/target/test/data"/>
+  <mkdir dir="/home/ployo/workspace/ReadCodes/hadoop-2.9.1-src/hadoop-common-project/hadoop-common/target/log"/>
+  <copy toDir="/home/ployo/workspace/ReadCodes/hadoop-2.9.1-src/hadoop-common-project/hadoop-common/target/test-classes">
+    <fileset dir="/home/ployo/workspace/ReadCodes/hadoop-2.9.1-src/hadoop-common-project/hadoop-common/src/main/conf"/>
+  </copy>
+</target>
+</project>
